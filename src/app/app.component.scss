@@ -1,0 +1,82 @@
+.app-wrapper {
+      display: flex;
+      flex-direction: column;
+
+      height: 100%;
+
+    // background-image: url("https://images.unsplash.com/photo-1673090902782-035965f00ce2?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NDY3MjM1Mw&ixlib=rb-4.0.3&q=80&w=1920");
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
+    // background-attachment: fixed;
+
+
+  }
+
+
+  .bg-img {
+    position: fixed;
+
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+
+    z-index: -1;
+
+  }
+
+
+
+
+.top-section {
+  //background-color: aquamarine;
+  text-align: center;
+
+  padding: 75px 0; /*That should be 100px but didn't work tome*/
+
+      h1 {
+        font-size: 120px;
+        font-weight: bold;
+        color: #f5f5f5;
+        text-shadow: 0px 1px 7px rgba(black, 0.1);
+
+
+      }
+      h2 {
+        font-size: 28px;
+        color: white;
+        text-shadow: 0px 1px 4px rgba(black, 0.1);
+      }
+}
+.content-section{
+  //background-color: cadetblue ;
+  flex-grow: 1;
+  min-height: 0;
+}
+.bottom-section {
+  //background-color: coral;
+  display: flex;
+  app-tabs  {
+    margin: auto;
+  }
+}
+
+.change-bg-btn{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+
+  background: rgba(black, 0.1);
+  color: rgba(white, 0.7);
+
+  &:hover {
+    background: rgba(black, 0.3);
+    color: white;
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+}
